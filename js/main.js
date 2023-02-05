@@ -1,7 +1,7 @@
 (function ($) {
     "use strict";
 
-    // Spinner
+   
     var spinner = function () {
         setTimeout(function () {
             if ($('#spinner').length > 0) {
@@ -12,11 +12,9 @@
     spinner();
     
     
-    // Initiate the wowjs
     new WOW().init();
 
 
-    // Sticky Navbar
     $(window).scroll(function () {
         if ($(this).scrollTop() > 300) {
             $('.sticky-top').css('top', '0px');
@@ -26,7 +24,6 @@
     });
     
     
-    // Dropdown on mouse hover
     const $dropdown = $(".dropdown");
     const $dropdownToggle = $(".dropdown-toggle");
     const $dropdownMenu = $(".dropdown-menu");
@@ -54,7 +51,6 @@
     });
     
     
-    // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 300) {
             $('.back-to-top').fadeIn('slow');
@@ -68,14 +64,12 @@
     });
 
 
-    // Facts counter
     $('[data-toggle="counter-up"]').counterUp({
         delay: 10,
         time: 2000
     });
 
 
-    // Header carousel
     $(".header-carousel").owlCarousel({
         autoplay: false,
         smartSpeed: 1500,
@@ -90,7 +84,6 @@
     });
 
 
-    // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
         autoplay: false,
         smartSpeed: 1000,

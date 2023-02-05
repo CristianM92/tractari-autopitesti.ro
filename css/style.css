@@ -1,4 +1,3 @@
-/********** Template CSS **********/
 :root {
     --primary: #FF3E41;
     --secondary: #51CFED;
@@ -18,8 +17,6 @@
     z-index: 99;
 }
 
-
-/*** Spinner ***/
 #spinner {
     opacity: 0;
     visibility: hidden;
@@ -33,8 +30,6 @@
     opacity: 1;
 }
 
-
-/*** Button ***/
 .btn {
     font-weight: 600;
     transition: .5s;
@@ -70,7 +65,7 @@
     font-weight: normal;
 }
 
-/*** Navbar ***/
+
 .navbar .dropdown-toggle::after {
     border: none;
     content: "\f107";
@@ -162,7 +157,6 @@
 }
 
 
-/*** Header ***/
 @media (max-width: 768px) {
     .header-carousel .owl-carousel-item {
         position: relative;
@@ -229,7 +223,6 @@
 }
 
 
-/*** About ***/
 @media (min-width: 992px) {
     .container.about {
         max-width: 100% !important;
@@ -253,7 +246,6 @@
 }
 
 
-/*** Feature ***/
 @media (min-width: 992px) {
     .container.feature {
         max-width: 100% !important;
@@ -277,7 +269,6 @@
 }
 
 
-/*** Service, Price & Team ***/
 .service-item,
 .price-item,
 .team-item {
@@ -358,7 +349,6 @@
 }
 
 
-/*** Testimonial ***/
 .testimonial-carousel .owl-item .testimonial-item {
     position: relative;
     transition: .5s;
@@ -393,7 +383,6 @@
 }
 
 
-/*** Contact ***/
 @media (min-width: 992px) {
     .container.contact-page {
         max-width: 100% !important;
@@ -417,7 +406,6 @@
 }
 
 
-/*** Footer ***/
 .footer {
     background: linear-gradient(rgba(6, 3, 21, .5), rgba(6, 3, 21, .5)), url(../img/map.png) center center no-repeat;
     background-size: cover;
