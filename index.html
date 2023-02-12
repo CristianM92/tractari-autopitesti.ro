@@ -30,12 +30,29 @@
 </head>
 
 <body>
+    <div id="google_translate_element"></div>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {pageLanguage: 'en'},
+                'google_translate_element'
+            );
+        }
+    </script>
+
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <div id="like_button_container">
+        <!-- Here we will mount our Component-->
+    </div>
+
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
             <span class="sr-only">Loading...</span>
         </div>
     </div>
-   
+
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow border-top border-5 border-primary sticky-top p-0">
         <a href="index.html" class="navbar-brand bg-primary d-flex align-items-center px-4 px-lg-5">
             <h2 class="mb-2 text-white">Platforma Auto</h2>
@@ -99,7 +116,7 @@
             </div>
         </div>
     </div>
-   
+
     <div class="container-fluid overflow-hidden py-5 px-lg-0">
         <div class="container about py-5 px-lg-0">
             <div class="row g-5 mx-lg-0">
@@ -129,7 +146,7 @@
             </div>
         </div>
     </div>
-  
+
     <div class="container-xxl py-5">
         <div class="container py-5">
             <div class="row g-5">
@@ -171,7 +188,7 @@
             </div>
         </div>
     </div>
-  
+
     <div class="container-xxl py-5">
         <div class="container py-5">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
@@ -273,7 +290,7 @@
             </div>
         </div>
     </div>
-    
+
     <div class="container-xxl py-5">
         <div class="container py-5">
             <div class="row g-5 align-items-center">
@@ -323,7 +340,7 @@
             </div>
         </div>
     </div>
-   
+
     <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="text-center">
@@ -378,7 +395,7 @@
             </div>
         </div>
     </div>
-   
+
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -390,6 +407,11 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
     <script src="js/main.js"></script>
-    
+
+
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+
 </body>
 </html>
